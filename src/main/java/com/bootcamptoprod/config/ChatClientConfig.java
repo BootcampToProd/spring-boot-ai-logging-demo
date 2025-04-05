@@ -1,7 +1,6 @@
 package com.bootcamptoprod.config;
 
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.boot.web.client.RestClientCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,8 +12,4 @@ public class ChatClientConfig {
         return chatClientBuilder.build();
     }
 
-    @Bean
-    public RestClientCustomizer aiLoggingRestClientCustomizer() {
-        return restClientBuilder -> restClientBuilder.requestInterceptor(new AIRequestLogInterceptor());
-    }
 }

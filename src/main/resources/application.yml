@@ -1,3 +1,7 @@
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
+
 spring:
   application:
     name: spring-boot-ai-logging-demo
