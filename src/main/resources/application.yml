@@ -1,6 +1,6 @@
 logging:
   level:
-    org.springframework.ai.chat.client.advisor: DEBUG
+    org.zalando.logbook.Logbook: TRACE
 
 spring:
   application:
